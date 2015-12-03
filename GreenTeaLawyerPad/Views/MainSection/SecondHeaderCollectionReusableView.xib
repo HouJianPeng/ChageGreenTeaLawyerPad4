@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15C27e" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SecondHeaderCollectionReusableView" id="4XV-bc-9Yn" customClass="SecondHeaderCollectionReusableView">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="avr-9i-SUC">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="112" id="Zig-Uv-uXE">
+                            <variation key="heightClass=regular-widthClass=regular" constant="91"/>
+                        </constraint>
+                    </constraints>
+                    <state key="normal" backgroundImage="t_02">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Zig-Uv-uXE"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=regular">
+                        <mask key="constraints">
+                            <include reference="Zig-Uv-uXE"/>
+                        </mask>
+                    </variation>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="F43-v0-fTB">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="216" id="heD-8Z-loH">
+                            <variation key="heightClass=regular-widthClass=regular" constant="155"/>
+                        </constraint>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="heD-8Z-loH"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=regular">
+                        <mask key="constraints">
+                            <include reference="heD-8Z-loH"/>
+                        </mask>
+                    </variation>
+                </imageView>
+            </subviews>
+            <animations/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="avr-9i-SUC" secondAttribute="bottom" constant="16" id="1Ps-ve-OM0">
+                    <variation key="heightClass=regular-widthClass=regular" constant="0.0"/>
+                </constraint>
+                <constraint firstItem="avr-9i-SUC" firstAttribute="top" secondItem="4XV-bc-9Yn" secondAttribute="top" constant="16" id="6Nr-jB-q1k">
+                    <variation key="heightClass=regular-widthClass=regular" constant="-7"/>
+                </constraint>
+                <constraint firstAttribute="bottom" secondItem="F43-v0-fTB" secondAttribute="bottom" constant="12" id="VSg-gl-aaQ">
+                    <variation key="heightClass=regular-widthClass=regular" constant="0.0"/>
+                </constraint>
+                <constraint firstAttribute="trailing" secondItem="avr-9i-SUC" secondAttribute="trailing" constant="19" id="VhS-Eo-jhK">
+                    <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                </constraint>
+                <constraint firstItem="F43-v0-fTB" firstAttribute="top" secondItem="4XV-bc-9Yn" secondAttribute="top" constant="12" id="tOs-zr-rlN">
+                    <variation key="heightClass=regular-widthClass=regular" constant="3"/>
+                </constraint>
+                <constraint firstItem="F43-v0-fTB" firstAttribute="leading" secondItem="4XV-bc-9Yn" secondAttribute="leading" constant="8" id="xSz-3o-SXl">
+                    <variation key="heightClass=regular-widthClass=regular" constant="10"/>
+                </constraint>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="avr-9i-SUC"/>
+                    <exclude reference="F43-v0-fTB"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="1Ps-ve-OM0"/>
+                    <exclude reference="6Nr-jB-q1k"/>
+                    <exclude reference="VhS-Eo-jhK"/>
+                    <exclude reference="VSg-gl-aaQ"/>
+                    <exclude reference="tOs-zr-rlN"/>
+                    <exclude reference="xSz-3o-SXl"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=regular">
+                <mask key="subviews">
+                    <include reference="avr-9i-SUC"/>
+                    <include reference="F43-v0-fTB"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="1Ps-ve-OM0"/>
+                    <include reference="6Nr-jB-q1k"/>
+                    <include reference="VhS-Eo-jhK"/>
+                    <include reference="VSg-gl-aaQ"/>
+                    <include reference="tOs-zr-rlN"/>
+                    <include reference="xSz-3o-SXl"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="theMoreButton" destination="avr-9i-SUC" id="HpW-sj-Eod"/>
+                <outlet property="theSecondImage" destination="F43-v0-fTB" id="TQG-fU-wv2"/>
+            </connections>
+            <point key="canvasLocation" x="258" y="141"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="t_02" width="51" height="26"/>
+    </resources>
+</document>

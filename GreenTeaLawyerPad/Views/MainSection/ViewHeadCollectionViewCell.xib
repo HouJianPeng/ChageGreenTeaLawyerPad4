@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15C27e" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ViewHeadCollectionViewCell" id="gTV-IL-0wX" customClass="ViewHeadCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="124" height="61"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="124" height="61"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="18J-KP-rJr">
+                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                        <animations/>
+                    </imageView>
+                </subviews>
+                <animations/>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <animations/>
+            <constraints>
+                <constraint firstItem="18J-KP-rJr" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="21" id="8Vs-3p-7dp">
+                    <variation key="heightClass=regular-widthClass=regular" constant="0.0"/>
+                </constraint>
+                <constraint firstAttribute="bottom" secondItem="18J-KP-rJr" secondAttribute="bottom" constant="15" id="MW5-Yl-B0Z">
+                    <variation key="heightClass=regular-widthClass=regular" constant="0.0"/>
+                </constraint>
+                <constraint firstItem="18J-KP-rJr" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="21" id="Rpz-bp-AQO"/>
+                <constraint firstItem="18J-KP-rJr" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="skA-ue-ZIu">
+                    <variation key="heightClass=regular-widthClass=regular" constant="0.0"/>
+                </constraint>
+                <constraint firstAttribute="trailing" secondItem="18J-KP-rJr" secondAttribute="trailing" constant="21" id="zyW-jQ-ads">
+                    <variation key="heightClass=regular-widthClass=regular" constant="0.0"/>
+                </constraint>
+            </constraints>
+            <size key="customSize" width="166" height="84"/>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="18J-KP-rJr"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="8Vs-3p-7dp"/>
+                    <exclude reference="MW5-Yl-B0Z"/>
+                    <exclude reference="Rpz-bp-AQO"/>
+                    <exclude reference="skA-ue-ZIu"/>
+                    <exclude reference="zyW-jQ-ads"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=regular">
+                <mask key="subviews">
+                    <include reference="18J-KP-rJr"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="8Vs-3p-7dp"/>
+                    <include reference="MW5-Yl-B0Z"/>
+                    <exclude reference="Rpz-bp-AQO"/>
+                    <include reference="skA-ue-ZIu"/>
+                    <include reference="zyW-jQ-ads"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="theImageView" destination="18J-KP-rJr" id="AEn-Mz-xa0"/>
+            </connections>
+            <point key="canvasLocation" x="338" y="199"/>
+        </collectionViewCell>
+    </objects>
+</document>

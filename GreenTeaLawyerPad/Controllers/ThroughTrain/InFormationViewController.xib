@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InFormationViewController">
+            <connections>
+                <outlet property="informationCollectionView" destination="OgL-70-PDL" id="D6o-P2-ZLZ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="OgL-70-PDL">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <animations/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ond-SB-yck">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="rvQ-Dn-zJ6"/>
+                        <outlet property="delegate" destination="-1" id="Mgy-11-JFD"/>
+                    </connections>
+                </collectionView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="OgL-70-PDL" secondAttribute="centerX" constant="85" id="1dd-PF-DNE">
+                    <variation key="heightClass=regular-widthClass=regular" constant="0.0"/>
+                </constraint>
+                <constraint firstItem="OgL-70-PDL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="32" id="9Zx-9Z-5Ln">
+                    <variation key="heightClass=regular-widthClass=regular" constant="0.0"/>
+                </constraint>
+                <constraint firstAttribute="trailing" secondItem="OgL-70-PDL" secondAttribute="trailing" constant="84" id="9mW-4O-8Xa">
+                    <variation key="heightClass=regular-widthClass=regular" constant="0.0"/>
+                </constraint>
+                <constraint firstAttribute="bottom" secondItem="OgL-70-PDL" secondAttribute="bottom" constant="8" id="MOW-N8-7sc">
+                    <variation key="heightClass=regular-widthClass=regular" constant="0.0"/>
+                </constraint>
+                <constraint firstItem="OgL-70-PDL" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="27" id="rsA-u1-nss">
+                    <variation key="heightClass=regular-widthClass=regular" constant="0.0"/>
+                </constraint>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="OgL-70-PDL"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="1dd-PF-DNE"/>
+                    <exclude reference="9Zx-9Z-5Ln"/>
+                    <exclude reference="9mW-4O-8Xa"/>
+                    <exclude reference="MOW-N8-7sc"/>
+                    <exclude reference="rsA-u1-nss"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=regular">
+                <mask key="subviews">
+                    <include reference="OgL-70-PDL"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="1dd-PF-DNE"/>
+                    <include reference="9Zx-9Z-5Ln"/>
+                    <include reference="9mW-4O-8Xa"/>
+                    <include reference="MOW-N8-7sc"/>
+                    <include reference="rsA-u1-nss"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>

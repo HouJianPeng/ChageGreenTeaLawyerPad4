@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15C27e" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AboutUsViewController">
+            <connections>
+                <outlet property="aboutUsButton" destination="Erb-aT-3Kp" id="cmX-1H-LW3"/>
+                <outlet property="aboutUsVIew" destination="wdW-bn-inb" id="Z9l-Wn-vrh"/>
+                <outlet property="detialTextView" destination="uD8-n3-d8V" id="fv4-BD-iFf"/>
+                <outlet property="tellUsButton" destination="ShU-si-mDF" id="WU0-3k-iHl"/>
+                <outlet property="tellUsView" destination="hCA-TZ-p07" id="CAq-Wm-KnB"/>
+                <outlet property="tellusTextview" destination="er2-ih-uow" id="V8c-Ku-9Su"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bb_04" translatesAutoresizingMaskIntoConstraints="NO" id="9JU-qg-btz">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="800" id="ViL-r2-GNW">
+                            <variation key="heightClass=regular-widthClass=regular" constant="263"/>
+                        </constraint>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="ViL-r2-GNW"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=regular">
+                        <mask key="constraints">
+                            <include reference="ViL-r2-GNW"/>
+                        </mask>
+                    </variation>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ShU-si-mDF">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="f1e-1C-DgQ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    <state key="normal" backgroundImage="bb_03">
+                        <color key="titleColor" red="0.062756470959595911" green="0.013778775868060023" blue="0.0032457137559685481" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="f1e-1C-DgQ"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=regular">
+                        <mask key="constraints">
+                            <include reference="f1e-1C-DgQ"/>
+                        </mask>
+                    </variation>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Erb-aT-3Kp">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="EN1-YC-3N4">
+                            <variation key="heightClass=regular-widthClass=regular" constant="50"/>
+                        </constraint>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="cU6-Nj-Yiz"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    <state key="normal" backgroundImage="bb_02">
+                        <color key="titleColor" red="0.017608145201910265" green="0.020675505050505083" blue="0.0094478031579149965" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="EN1-YC-3N4"/>
+                            <exclude reference="cU6-Nj-Yiz"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=regular">
+                        <mask key="constraints">
+                            <include reference="EN1-YC-3N4"/>
+                            <exclude reference="cU6-Nj-Yiz"/>
+                        </mask>
+                    </variation>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hCA-TZ-p07">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <subviews>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="er2-ih-uow">
+                            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            <animations/>
+                            <string key="text"> 				
+
+
+
+				电话
+				客服咨询热线：010-59725600
+				法律咨询热线：010-59725607
+				客服/法律热线电话服务时间：周一至周五    9：00-18：00
+
+
+				地址
+				北京市东三环SOHO嘉盛中心20层2007室
+
+
+				客服邮箱
+				help@lawcheck.com.cn</string>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="er2-ih-uow" firstAttribute="leading" secondItem="hCA-TZ-p07" secondAttribute="leading" id="Gq0-em-y70"/>
+                        <constraint firstAttribute="trailing" secondItem="er2-ih-uow" secondAttribute="trailing" id="Hdj-oZ-7Di"/>
+                        <constraint firstItem="er2-ih-uow" firstAttribute="top" secondItem="hCA-TZ-p07" secondAttribute="top" id="RM3-SG-tQu"/>
+                        <constraint firstAttribute="bottom" secondItem="er2-ih-uow" secondAttribute="bottom" constant="8" id="Xl5-Ww-QEN"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="subviews">
+                            <exclude reference="er2-ih-uow"/>
+                        </mask>
+                        <mask key="constraints">
+                            <exclude reference="Gq0-em-y70"/>
+                            <exclude reference="Hdj-oZ-7Di"/>
+                            <exclude reference="RM3-SG-tQu"/>
+                            <exclude reference="Xl5-Ww-QEN"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=regular">
+                        <mask key="subviews">
+                            <include reference="er2-ih-uow"/>
+                        </mask>
+                        <mask key="constraints">
+                            <include reference="Gq0-em-y70"/>
+                            <include reference="Hdj-oZ-7Di"/>
+                            <include reference="RM3-SG-tQu"/>
+                            <include reference="Xl5-Ww-QEN"/>
+                        </mask>
+                    </variation>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wdW-bn-inb">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <subviews>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uD8-n3-d8V">
+                            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            <animations/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <string key="text">              绿茶网隶属于律查网络科技（北京）有限公司，成立于2015年7月1日，是一家为普通用户和律师用户提供居间服务的互联网公司。绿茶网通过标准化、规范化的流程把法律服务打包成一个产品，利用互联网实现交易。
+
+       绿茶网是互联网时代法律服务的引领者，凭借强大的资本实力，国际化、专业化的管理团队及技术团队，以法律服务为核心的自有技术平台和全国各专业领域的优秀律师和知名律所的强大资源，将互联网法律服务融入客户“医、食、住、行、玩”的各项生活领域，为广大用户提供一站式的贴身法律服务。
+
+	服务范围
+
+       绿茶网为普通用户提供免费法律服务。具体包括：在线法律咨询、诉讼案件发布、非诉法律事务委托、法律资讯浏览、法律文书及合同下载等全方位服务。
+
+       绿茶网还为广大律师用户提供诉讼案源查询、申请案件委托、申请非诉法律事务委托，律师风采展示、业内交流、法律资讯浏览等主要服务。
+
+       绿茶网还为加盟合作的律师事务所提供律师事务所介绍、律师团队风采展示等个性化服务。 
+      实干赢取未来，创新成就梦想。展望未来，绿茶网将坚持专业化的发展战略，求真务实，开拓创新，以“缔造中国顶级的在线法律平台，成就绿茶网的世界品牌”为目标，为“中国梦”贡献更多的力量。</string>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" red="1" green="0.93461264130023536" blue="0.33573734440902114" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="uD8-n3-d8V" secondAttribute="bottom" constant="204" id="HH7-Dy-cez">
+                            <variation key="heightClass=regular-widthClass=regular" constant="0.0"/>
+                        </constraint>
+                        <constraint firstItem="uD8-n3-d8V" firstAttribute="top" secondItem="wdW-bn-inb" secondAttribute="top" constant="204" id="WBR-ih-Wch">
+                            <variation key="heightClass=regular-widthClass=regular" constant="0.0"/>
+                        </constraint>
+                        <constraint firstItem="uD8-n3-d8V" firstAttribute="leading" secondItem="wdW-bn-inb" secondAttribute="leading" constant="280" id="pb8-tB-Als">
+                            <variation key="heightClass=regular-widthClass=regular" constant="0.0"/>
+                        </constraint>
+                        <constraint firstAttribute="trailing" secondItem="uD8-n3-d8V" secondAttribute="trailing" constant="280" id="xWq-jM-VfX">
+                            <variation key="heightClass=regular-widthClass=regular" constant="0.0"/>
+                        </constraint>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="subviews">
+                            <exclude reference="uD8-n3-d8V"/>
+                        </mask>
+                        <mask key="constraints">
+                            <exclude reference="HH7-Dy-cez"/>
+                            <exclude reference="WBR-ih-Wch"/>
+                            <exclude reference="pb8-tB-Als"/>
+                            <exclude reference="xWq-jM-VfX"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=regular">
+                        <mask key="subviews">
+                            <include reference="uD8-n3-d8V"/>
+                        </mask>
+                        <mask key="constraints">
+                            <include reference="HH7-Dy-cez"/>
+                            <include reference="WBR-ih-Wch"/>
+                            <include reference="pb8-tB-Als"/>
+                            <include reference="xWq-jM-VfX"/>
+                        </mask>
+                    </variation>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iPad_icon" translatesAutoresizingMaskIntoConstraints="NO" id="PTO-ft-auI">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="PTO-ft-auI" secondAttribute="height" multiplier="10:3" id="KEN-mJ-mWL"/>
+                        <constraint firstAttribute="height" constant="61" id="LyB-eO-gW4">
+                            <variation key="heightClass=regular-widthClass=regular" constant="90"/>
+                        </constraint>
+                        <constraint firstAttribute="width" constant="174" id="c4P-lo-WAC">
+                            <variation key="heightClass=regular-widthClass=regular" constant="180"/>
+                        </constraint>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="KEN-mJ-mWL"/>
+                            <exclude reference="LyB-eO-gW4"/>
+                            <exclude reference="c4P-lo-WAC"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=regular">
+                        <mask key="constraints">
+                            <include reference="KEN-mJ-mWL"/>
+                            <include reference="LyB-eO-gW4"/>
+                            <exclude reference="c4P-lo-WAC"/>
+                        </mask>
+                    </variation>
+                </imageView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Erb-aT-3Kp" firstAttribute="top" secondItem="PTO-ft-auI" secondAttribute="bottom" constant="37" id="0f6-XQ-WVn">
+                    <variation key="heightClass=regular-widthClass=regular" constant="33"/>
+                </constraint>
+                <constraint firstItem="Erb-aT-3Kp" firstAttribute="top" secondItem="9JU-qg-btz" secondAttribute="bottom" constant="-83" id="1SV-Xa-mur">
+                    <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                </constraint>
+                <constraint firstItem="wdW-bn-inb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="47" id="53M-lb-Y7R">
+                    <variation key="heightClass=regular-widthClass=regular" constant="0.0"/>
+                </constraint>
+                <constraint firstItem="ShU-si-mDF" firstAttribute="leading" secondItem="Erb-aT-3Kp" secondAttribute="trailing" constant="130" id="8O9-6c-jkS">
+                    <variation key="heightClass=regular-widthClass=regular" constant="-1"/>
+                </constraint>
+                <constraint firstItem="ShU-si-mDF" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="207" id="8qq-oU-luo">
+                    <variation key="heightClass=regular-widthClass=regular" constant="160"/>
+                </constraint>
+                <constraint firstItem="Erb-aT-3Kp" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="245" id="90N-nM-3cW">
+                    <variation key="heightClass=regular-widthClass=regular" constant="100"/>
+                </constraint>
+                <constraint firstAttribute="trailing" secondItem="PTO-ft-auI" secondAttribute="trailing" constant="320" id="9vV-N7-jRS">
+                    <variation key="heightClass=regular-widthClass=regular" constant="250"/>
+                </constraint>
+                <constraint firstAttribute="bottom" secondItem="hCA-TZ-p07" secondAttribute="bottom" constant="123" id="HbR-7K-wdu">
+                    <variation key="heightClass=regular-widthClass=regular" constant="-8"/>
+                </constraint>
+                <constraint firstAttribute="trailing" secondItem="wdW-bn-inb" secondAttribute="trailing" constant="433" id="JYD-Y9-JUK">
+                    <variation key="heightClass=regular-widthClass=regular" constant="0.0"/>
+                </constraint>
+                <constraint firstAttribute="trailing" secondItem="9JU-qg-btz" secondAttribute="trailing" constant="8" id="KuV-Xa-zV7">
+                    <variation key="heightClass=regular-widthClass=regular" constant="0.0"/>
+                </constraint>
+                <constraint firstItem="Erb-aT-3Kp" firstAttribute="width" secondItem="ShU-si-mDF" secondAttribute="width" id="M1D-JK-X68"/>
+                <constraint firstItem="Erb-aT-3Kp" firstAttribute="width" secondItem="ShU-si-mDF" secondAttribute="width" id="N6y-cL-SOl"/>
+                <constraint firstItem="9JU-qg-btz" firstAttribute="leading" secondItem="Erb-aT-3Kp" secondAttribute="trailing" constant="-309" id="Rsj-x8-FoP">
+                    <variation key="heightClass=regular-widthClass=regular" constant="150"/>
+                </constraint>
+                <constraint firstItem="Erb-aT-3Kp" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="212" id="Ul8-Ux-gxX">
+                    <variation key="heightClass=regular-widthClass=regular" constant="160"/>
+                </constraint>
+                <constraint firstItem="PTO-ft-auI" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="49" id="bHr-cd-DoX">
+                    <variation key="heightClass=regular-widthClass=regular" constant="37"/>
+                </constraint>
+                <constraint firstItem="ShU-si-mDF" firstAttribute="top" secondItem="9JU-qg-btz" secondAttribute="bottom" constant="-75" id="brb-OX-Veo">
+                    <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                </constraint>
+                <constraint firstItem="hCA-TZ-p07" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="346" id="cGd-fP-AYa">
+                    <variation key="heightClass=regular-widthClass=regular" constant="0.0"/>
+                </constraint>
+                <constraint firstItem="ShU-si-mDF" firstAttribute="leading" secondItem="9JU-qg-btz" secondAttribute="trailing" constant="-292" id="dtQ-Yq-57g">
+                    <variation key="heightClass=regular-widthClass=regular" constant="150"/>
+                </constraint>
+                <constraint firstItem="9JU-qg-btz" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="32" id="fIm-R5-Whf">
+                    <variation key="heightClass=regular-widthClass=regular" constant="0.0"/>
+                </constraint>
+                <constraint firstItem="ShU-si-mDF" firstAttribute="leading" secondItem="Erb-aT-3Kp" secondAttribute="trailing" constant="168" id="gXT-qY-O6A">
+                    <variation key="heightClass=regular-widthClass=regular" constant="0.0"/>
+                </constraint>
+                <constraint firstAttribute="trailing" secondItem="ShU-si-mDF" secondAttribute="trailing" constant="333" id="gv7-aL-bDb">
+                    <variation key="heightClass=regular-widthClass=regular" constant="101"/>
+                </constraint>
+                <constraint firstItem="hCA-TZ-p07" firstAttribute="top" secondItem="9JU-qg-btz" secondAttribute="bottom" constant="13" id="hGj-ur-YBS">
+                    <variation key="heightClass=regular-widthClass=regular" constant="1"/>
+                </constraint>
+                <constraint firstItem="9JU-qg-btz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="23" id="jfo-s6-GRj">
+                    <variation key="heightClass=regular-widthClass=regular" constant="0.0"/>
+                </constraint>
+                <constraint firstAttribute="trailing" secondItem="hCA-TZ-p07" secondAttribute="trailing" constant="134" id="mb6-h2-2eb">
+                    <variation key="heightClass=regular-widthClass=regular" constant="0.0"/>
+                </constraint>
+                <constraint firstAttribute="bottom" secondItem="wdW-bn-inb" secondAttribute="bottom" constant="142" id="pAN-sM-oRG">
+                    <variation key="heightClass=regular-widthClass=regular" constant="0.0"/>
+                </constraint>
+                <constraint firstItem="PTO-ft-auI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="320" id="tQJ-oA-AGf">
+                    <variation key="heightClass=regular-widthClass=regular" constant="250"/>
+                </constraint>
+                <constraint firstItem="wdW-bn-inb" firstAttribute="top" secondItem="9JU-qg-btz" secondAttribute="bottom" constant="-6" id="uXP-i8-OZy">
+                    <variation key="heightClass=regular-widthClass=regular" constant="1"/>
+                </constraint>
+                <constraint firstItem="Erb-aT-3Kp" firstAttribute="height" secondItem="ShU-si-mDF" secondAttribute="height" id="y0O-Ul-ijz"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="9JU-qg-btz"/>
+                    <exclude reference="ShU-si-mDF"/>
+                    <exclude reference="Erb-aT-3Kp"/>
+                    <exclude reference="hCA-TZ-p07"/>
+                    <exclude reference="wdW-bn-inb"/>
+                    <exclude reference="PTO-ft-auI"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="0f6-XQ-WVn"/>
+                    <exclude reference="1SV-Xa-mur"/>
+                    <exclude reference="90N-nM-3cW"/>
+                    <exclude reference="M1D-JK-X68"/>
+                    <exclude reference="N6y-cL-SOl"/>
+                    <exclude reference="Ul8-Ux-gxX"/>
+                    <exclude reference="y0O-Ul-ijz"/>
+                    <exclude reference="8O9-6c-jkS"/>
+                    <exclude reference="8qq-oU-luo"/>
+                    <exclude reference="brb-OX-Veo"/>
+                    <exclude reference="dtQ-Yq-57g"/>
+                    <exclude reference="gXT-qY-O6A"/>
+                    <exclude reference="gv7-aL-bDb"/>
+                    <exclude reference="KuV-Xa-zV7"/>
+                    <exclude reference="Rsj-x8-FoP"/>
+                    <exclude reference="fIm-R5-Whf"/>
+                    <exclude reference="jfo-s6-GRj"/>
+                    <exclude reference="9vV-N7-jRS"/>
+                    <exclude reference="bHr-cd-DoX"/>
+                    <exclude reference="tQJ-oA-AGf"/>
+                    <exclude reference="HbR-7K-wdu"/>
+                    <exclude reference="cGd-fP-AYa"/>
+                    <exclude reference="hGj-ur-YBS"/>
+                    <exclude reference="mb6-h2-2eb"/>
+                    <exclude reference="53M-lb-Y7R"/>
+                    <exclude reference="JYD-Y9-JUK"/>
+                    <exclude reference="pAN-sM-oRG"/>
+                    <exclude reference="uXP-i8-OZy"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=regular">
+                <mask key="subviews">
+                    <include reference="9JU-qg-btz"/>
+                    <include reference="ShU-si-mDF"/>
+                    <include reference="Erb-aT-3Kp"/>
+                    <include reference="hCA-TZ-p07"/>
+                    <include reference="wdW-bn-inb"/>
+                    <include reference="PTO-ft-auI"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="0f6-XQ-WVn"/>
+                    <exclude reference="1SV-Xa-mur"/>
+                    <include reference="90N-nM-3cW"/>
+                    <include reference="M1D-JK-X68"/>
+                    <exclude reference="N6y-cL-SOl"/>
+                    <include reference="Ul8-Ux-gxX"/>
+                    <include reference="y0O-Ul-ijz"/>
+                    <include reference="8O9-6c-jkS"/>
+                    <include reference="8qq-oU-luo"/>
+                    <exclude reference="brb-OX-Veo"/>
+                    <exclude reference="dtQ-Yq-57g"/>
+                    <exclude reference="gXT-qY-O6A"/>
+                    <include reference="gv7-aL-bDb"/>
+                    <include reference="KuV-Xa-zV7"/>
+                    <exclude reference="Rsj-x8-FoP"/>
+                    <include reference="fIm-R5-Whf"/>
+                    <include reference="jfo-s6-GRj"/>
+                    <include reference="9vV-N7-jRS"/>
+                    <include reference="bHr-cd-DoX"/>
+                    <include reference="tQJ-oA-AGf"/>
+                    <include reference="HbR-7K-wdu"/>
+                    <include reference="cGd-fP-AYa"/>
+                    <include reference="hGj-ur-YBS"/>
+                    <include reference="mb6-h2-2eb"/>
+                    <include reference="53M-lb-Y7R"/>
+                    <include reference="JYD-Y9-JUK"/>
+                    <include reference="pAN-sM-oRG"/>
+                    <include reference="uXP-i8-OZy"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+    <resources>
+        <image name="bb_02" width="489" height="102"/>
+        <image name="bb_03" width="243" height="51"/>
+        <image name="bb_04" width="768" height="255"/>
+        <image name="iPad_icon" width="285" height="96"/>
+    </resources>
+</document>

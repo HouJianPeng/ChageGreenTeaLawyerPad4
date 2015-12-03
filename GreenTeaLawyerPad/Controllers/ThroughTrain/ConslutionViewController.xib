@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ConslutionViewController">
+            <connections>
+                <outlet property="protWebView" destination="MIN-Ae-eQy" id="F19-V9-wMs"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MIN-Ae-eQy">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </webView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="MIN-Ae-eQy" secondAttribute="bottom" id="cXP-O2-glS"/>
+                <constraint firstAttribute="trailing" secondItem="MIN-Ae-eQy" secondAttribute="trailing" id="gjX-RT-Sem"/>
+                <constraint firstAttribute="centerY" secondItem="MIN-Ae-eQy" secondAttribute="centerY" id="j0J-CB-5Ud"/>
+                <constraint firstItem="MIN-Ae-eQy" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ng0-y6-Q7r"/>
+                <constraint firstAttribute="centerX" secondItem="MIN-Ae-eQy" secondAttribute="centerX" id="q9G-7t-lFL"/>
+                <constraint firstItem="MIN-Ae-eQy" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="qsW-9Z-C8a"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="MIN-Ae-eQy"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="cXP-O2-glS"/>
+                    <exclude reference="gjX-RT-Sem"/>
+                    <exclude reference="j0J-CB-5Ud"/>
+                    <exclude reference="ng0-y6-Q7r"/>
+                    <exclude reference="q9G-7t-lFL"/>
+                    <exclude reference="qsW-9Z-C8a"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=regular">
+                <mask key="subviews">
+                    <include reference="MIN-Ae-eQy"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="cXP-O2-glS"/>
+                    <include reference="gjX-RT-Sem"/>
+                    <include reference="j0J-CB-5Ud"/>
+                    <include reference="ng0-y6-Q7r"/>
+                    <include reference="q9G-7t-lFL"/>
+                    <include reference="qsW-9Z-C8a"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>

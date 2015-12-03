@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuse1" rowHeight="708" id="KGk-i7-Jjw" customClass="ApplyForCaseCell">
+            <rect key="frame" x="0.0" y="0.0" width="695" height="191"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="695" height="190.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="案件标题" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UMX-vT-NkS">
+                        <rect key="frame" x="28" y="28" width="399" height="30"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="1YV-Ke-P25"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="案件类型" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="amt-VY-u7k">
+                        <rect key="frame" x="527" y="24" width="160" height="30"/>
+                        <animations/>
+                        <color key="backgroundColor" red="0.76319839015151514" green="0.76319839015151514" blue="0.76319839015151514" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="160" id="QcV-C7-wKN"/>
+                            <constraint firstAttribute="height" constant="21" id="a7h-ad-V3u"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2行........................" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tNu-RI-YWP">
+                        <rect key="frame" x="28" y="68" width="639" height="70"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="70" id="IoL-7v-ipj"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="anjian3" translatesAutoresizingMaskIntoConstraints="NO" id="o5g-MN-pbd">
+                        <rect key="frame" x="18" y="148" width="100" height="24"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="cuA-z5-t89"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstItem="tNu-RI-YWP" firstAttribute="top" secondItem="UMX-vT-NkS" secondAttribute="bottom" constant="10" id="3Nq-eo-W0H"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="tNu-RI-YWP" secondAttribute="trailing" constant="20" id="3vd-1p-vOZ"/>
+                    <constraint firstItem="amt-VY-u7k" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="16" id="BSs-Nb-UJh"/>
+                    <constraint firstItem="tNu-RI-YWP" firstAttribute="top" secondItem="UMX-vT-NkS" secondAttribute="bottom" constant="10" id="CLB-tm-hhc"/>
+                    <constraint firstItem="amt-VY-u7k" firstAttribute="leading" secondItem="UMX-vT-NkS" secondAttribute="trailing" constant="100" id="Hhk-7l-D5l"/>
+                    <constraint firstItem="UMX-vT-NkS" firstAttribute="top" secondItem="amt-VY-u7k" secondAttribute="bottom" constant="100" id="JRL-GR-5UR"/>
+                    <constraint firstItem="UMX-vT-NkS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="20" id="Szn-yz-vCX"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="amt-VY-u7k" secondAttribute="trailing" id="cGg-GX-faU"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="o5g-MN-pbd" secondAttribute="bottom" constant="10" id="eFo-wI-pLN"/>
+                    <constraint firstItem="tNu-RI-YWP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="20" id="fgg-zp-vbf"/>
+                    <constraint firstItem="UMX-vT-NkS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="20" id="gRT-Y8-e3f"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="amt-VY-u7k" secondAttribute="trailing" constant="46" id="oCc-yB-RCr"/>
+                    <constraint firstItem="o5g-MN-pbd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="ucD-Qk-y8o"/>
+                    <constraint firstItem="o5g-MN-pbd" firstAttribute="top" secondItem="tNu-RI-YWP" secondAttribute="bottom" constant="10" id="vEF-SI-GD1"/>
+                    <constraint firstItem="amt-VY-u7k" firstAttribute="height" secondItem="UMX-vT-NkS" secondAttribute="height" id="xIl-4h-nqy"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="JRL-GR-5UR"/>
+                        <exclude reference="3Nq-eo-W0H"/>
+                        <exclude reference="oCc-yB-RCr"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <animations/>
+            <connections>
+                <outlet property="caseDetailLabel" destination="tNu-RI-YWP" id="KUC-eU-kFF"/>
+                <outlet property="caseTitleLabel" destination="UMX-vT-NkS" id="AE1-7Q-nPr"/>
+                <outlet property="caseTypeLabel" destination="amt-VY-u7k" id="ytY-jQ-Pxk"/>
+            </connections>
+            <point key="canvasLocation" x="394.5" y="567.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="anjian3" width="190" height="60"/>
+    </resources>
+</document>

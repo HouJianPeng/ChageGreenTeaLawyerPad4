@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CityViewController">
+            <connections>
+                <outlet property="thecityTableView" destination="jDe-CK-lvx" id="MdB-A3-B0G"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="jDe-CK-lvx">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="sCe-Q8-Ihx"/>
+                        <outlet property="delegate" destination="-1" id="DJr-Rj-yvR"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="jDe-CK-lvx" secondAttribute="bottom" constant="63" id="5cE-Hd-xJj">
+                    <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                </constraint>
+                <constraint firstItem="jDe-CK-lvx" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="13" id="bls-EL-LGB">
+                    <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                </constraint>
+                <constraint firstAttribute="trailing" secondItem="jDe-CK-lvx" secondAttribute="trailing" constant="8" id="dbC-RW-0Wv">
+                    <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                </constraint>
+                <constraint firstItem="jDe-CK-lvx" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="15" id="itD-vC-UkM">
+                    <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                </constraint>
+                <constraint firstAttribute="centerX" secondItem="jDe-CK-lvx" secondAttribute="centerX" constant="-13" id="qh5-5Z-iM3">
+                    <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                </constraint>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="jDe-CK-lvx"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="5cE-Hd-xJj"/>
+                    <exclude reference="bls-EL-LGB"/>
+                    <exclude reference="dbC-RW-0Wv"/>
+                    <exclude reference="itD-vC-UkM"/>
+                    <exclude reference="qh5-5Z-iM3"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="jDe-CK-lvx"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="5cE-Hd-xJj"/>
+                    <include reference="bls-EL-LGB"/>
+                    <include reference="dbC-RW-0Wv"/>
+                    <include reference="itD-vC-UkM"/>
+                    <include reference="qh5-5Z-iM3"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>

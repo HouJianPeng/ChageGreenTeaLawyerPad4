@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15C27e" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetialViewController">
+            <connections>
+                <outlet property="detaiTitle" destination="EHJ-2c-8Dl" id="WZQ-K2-U59"/>
+                <outlet property="detialWebView" destination="6Ev-uf-n5w" id="rVW-ap-VO9"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Ev-uf-n5w">
+                    <rect key="frame" x="0.0" y="35" width="600" height="565"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </webView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EHJ-2c-8Dl">
+                    <rect key="frame" x="8" y="0.0" width="584" height="34"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34" id="QtT-81-7hQ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="EHJ-2c-8Dl" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="B2I-cM-hxs"/>
+                <constraint firstAttribute="trailing" secondItem="6Ev-uf-n5w" secondAttribute="trailing" id="RAz-O3-XEa"/>
+                <constraint firstItem="EHJ-2c-8Dl" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Sc7-gq-OIb"/>
+                <constraint firstItem="6Ev-uf-n5w" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Suk-Ut-T9f"/>
+                <constraint firstAttribute="bottom" secondItem="6Ev-uf-n5w" secondAttribute="bottom" id="hZ2-8Y-UOv"/>
+                <constraint firstItem="6Ev-uf-n5w" firstAttribute="top" secondItem="EHJ-2c-8Dl" secondAttribute="bottom" constant="1" id="xOg-CD-UKC"/>
+                <constraint firstAttribute="trailing" secondItem="EHJ-2c-8Dl" secondAttribute="trailing" constant="8" id="zlh-2B-hgK"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
